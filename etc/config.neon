@@ -1,0 +1,19 @@
+includes:
+	- webpack.neon
+
+application:
+	mapping:
+		*: Naja\Guide\Application\UI\Presenters\*Presenter
+
+services:
+	routing.router: Naja\Guide\Application\Routing\RouterFactory::create()
+
+	- Naja\Guide\Application\UI\Components\AddToBasketButton\AddToBasketButtonControlFactory
+	- Naja\Guide\Application\UI\Components\BasketWidget\BasketWidgetControlFactory
+	- Naja\Guide\Application\UI\Components\CategoryFilter\CategoryFilterControlFactory
+	- Naja\Guide\Application\UI\Components\Paging\PagingControlFactory
+	- Naja\Guide\Application\UI\Components\Reviews\ReviewsControlFactory
+
+	- Naja\Guide\Domain\Basket\Basket
+	- Naja\Guide\Domain\Catalog\ProductRepository
+	- Naja\Guide\Domain\Catalog\CategoryRepository

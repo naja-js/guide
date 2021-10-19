@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 200 100" fill="saddlebrown">
+	<style type="text/css">
+		.text {
+			font-size: 42px;
+			font-weight: bold;
+			font-family: 'Courier', monospace;
+		}
+	</style>
+
+	<g id="grain">
+		<mask id="slash">
+			<rect x="0" y="0" width="100%" height="100%" fill="white" />
+			<path d="M 35,55 C 60,60 70,60 90,50 C 110,40 130,40 145,45" stroke="black" stroke-width="5" fill="white" />
+		</mask>
+
+		<text x="0" y="64" class="text">&lt;</text>
+		<path
+			d="
+				M 40,50
+				A 20,12 0,0,1 140,50
+				A 20,12 0,0,1 40,50
+			"
+			mask="url(#slash)"
+		/>
+		<text x="150" y="64" class="text">/&gt;</text>
+	</g>
+</svg>

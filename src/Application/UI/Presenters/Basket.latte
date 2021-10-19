@@ -1,0 +1,26 @@
+{templateType Naja\Guide\Application\UI\Presenters\BasketTemplate}
+{extends @layout.latte}
+
+{block title}Basket{/block}
+{block content}
+<h1>Basket: {$totalPrice|money}</h1>
+
+<div class="catalog">
+    <div class="catalog-item" n:foreach="$items as $item">
+        <div class="catalog-item-image">
+            <img src="{$item->product->getImageUrl()|nocheck}" alt="{$item->product->getName()}">
+        </div>
+        <div class="catalog-item-details">
+            <div class="catalog-item-details-name">
+                <a n:href="ProductDetail: id: $item->product->getId()">
+                    {$item->product->getName()}
+                </a>
+            </div>
+            <div class="catalog-item-details-description">{$item->product->getDescription()}</div>
+            <div class="catalog-item-details-price">{$item->product->getPrice()|money}</div>
+        </div>
+        <div class="catalog-item-addToBasket">
+            {control addToBasket-{$item->product->getId()}}
+        </div>
+    </div>
+</div>

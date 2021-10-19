@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 200 300">
+	<!-- coffee bag -->
+	<path
+			d="M 50,270 v -220 q 0,-20 20,-20 h 80 q 20,0 20,20 v220 Z"
+			stroke-width="0"
+			fill="#000"
+	/>
+
+	<!-- shading -->
+	<path
+			d="M 50,270 v -160 h 120 Z"
+			stroke-width="0"
+			fill="#222"
+	/>
+
+	<!-- ribbon -->
+	<path
+			d="M 95,30 v 60 l 15,-20 l 15,20 v -60 Z"
+			stroke-width="0"
+			fill="gold"
+	/>
+
+	<!-- label -->
+	<g>
+		<!-- outer border -->
+		<rect x="60" y="160" width="100" height="100" stroke-width="0" fill="white" />
+
+		<!-- lining and inner border -->
+		<rect x="65" y="165" width="90" height="90" stroke-width="2" stroke="gold" fill="white" />
+
+		<!-- logo -->
+		<image x="80" y="170" width="60" height="30" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHJvbGU9ImltZyIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9InNhZGRsZWJyb3duIj4KCTxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CgkJLnRleHQgewoJCQlmb250LXNpemU6IDQycHg7CgkJCWZvbnQtd2VpZ2h0OiBib2xkOwoJCQlmb250LWZhbWlseTogJ0NvdXJpZXInLCBtb25vc3BhY2U7CgkJfQoJPC9zdHlsZT4KCgk8ZyBpZD0iZ3JhaW4iPgoJCTxtYXNrIGlkPSJzbGFzaCI+CgkJCTxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIiAvPgoJCQk8cGF0aCBkPSJNIDM1LDU1IEMgNjAsNjAgNzAsNjAgOTAsNTAgQyAxMTAsNDAgMTMwLDQwIDE0NSw0NSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSI1IiBmaWxsPSJ3aGl0ZSIgLz4KCQk8L21hc2s+CgoJCTx0ZXh0IHg9IjAiIHk9IjY0IiBjbGFzcz0idGV4dCI+Jmx0OzwvdGV4dD4KCQk8cGF0aAoJCQlkPSIKCQkJCU0gNDAsNTAKCQkJCUEgMjAsMTIgMCwwLDEgMTQwLDUwCgkJCQlBIDIwLDEyIDAsMCwxIDQwLDUwCgkJCSIKCQkJbWFzaz0idXJsKCNzbGFzaCkiCgkJLz4KCQk8dGV4dCB4PSIxNTAiIHk9IjY0IiBjbGFzcz0idGV4dCI+LyZndDs8L3RleHQ+Cgk8L2c+Cjwvc3ZnPgo=" />
+
+		<!-- brand -->
+		<rect x="70" y="220" width="35" height="10" stroke-width="0" fill="#666" />
+		<rect x="110" y="220" width="40" height="10" stroke-width="0" fill="#666" />
+		<rect x="80" y="240" width="60" height="5" stroke-width="0" fill="#aaa" />
+	</g>
+</svg>

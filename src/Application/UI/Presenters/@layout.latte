@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{include title} &ndash; CodinCoffee</title>
+    <script>
+        const script = document.createElement('script');
+		script.src = {$basePath} + '/assets/scripts/analytics.js';
+		script.async = true;
+        document.head.appendChild(script);
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="siteHeader">
+            <a n:href="ProductList:" class="brand">
+                <img
+                    src="{$basePath}/assets/images/logo.svg"
+                    alt="CodinCoffee"
+                    class="logo"
+                >
+
+                CodinCoffee
+            </a>
+
+            {control basketWidget}
+        </header>
+
+        <main class="mainContent">
+            {include content}
+        </main>
+    </div>
+
+    <script src="{webpack main.js}"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{templateType Naja\Guide\Application\UI\Components\Reviews\ReviewsTemplate}
+<div data-reviews-id="{$productId}"></div>
+<script>
+	var reviews_application_id = 'codin_coffee';
+
+	{
+		const script = document.createElement('script');
+		script.type = 'application/javascript';
+		script.async = true;
+		script.src = '/assets/scripts/reviews.js';
+		document.head.appendChild(script);
+	}
+</script>

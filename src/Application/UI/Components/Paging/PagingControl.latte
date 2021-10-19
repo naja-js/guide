@@ -1,0 +1,14 @@
+{templateType Naja\Guide\Application\UI\Components\Paging\PagingTemplate}
+
+<div class="pagination">
+    <ul>
+        <li n:for="$page = 1; $page <= $paginator->lastPage; $page++">
+            <a
+                n:href="this, page: $page"
+                n:tag-if="$page !== $paginator->page"
+            >
+                {$page}
+            </a>
+        </li>
+    </ul>
+</div>

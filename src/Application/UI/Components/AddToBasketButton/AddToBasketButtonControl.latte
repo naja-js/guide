@@ -2,11 +2,11 @@
 
 <div class="addToBasket">
     {if ! hasItem()}
-        <a n:href="add!" class="addToBasket-button ajax">
+        <a n:href="add!" class="addToBasket-button ajax" data-naja-history="replace">
             Add to Basket
         </a>
     {else}
-        <form n:name="form" class="ajax">
+        <form n:name="form" class="ajax" data-naja-history="replace">
             <button n:name="subtract" />
             {$item->amount}
             <button n:name="add" />

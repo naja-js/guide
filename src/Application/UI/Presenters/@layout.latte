@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>{include title} &ndash; CodinCoffee</title>
+    <title n:snippet="title">{include title} &ndash; CodinCoffee</title>
     <script>
         const script = document.createElement('script');
 		script.src = {$basePath} + '/assets/scripts/analytics.js';
@@ -26,7 +26,7 @@
             {control basketWidget}
         </header>
 
-        <main class="mainContent">
+        <main class="mainContent" n:snippet="content">
             {include content}
         </main>
     </div>

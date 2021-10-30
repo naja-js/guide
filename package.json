@@ -4,6 +4,7 @@
 		"node": ">=14.0"
 	},
 	"dependencies": {
+		"naja": "^2.2.1",
 		"nette-forms": "^3.2.0"
 	},
 	"devDependencies": {

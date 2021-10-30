@@ -1,9 +1,13 @@
 import onDomReady from './onDomReady';
 
-export const spinnerExtension = {
+export class SpinnerExtension {
+	constructor(fallbackSelector) {
+		this.fallbackSelector = fallbackSelector;
+	}
+
 	initialize(naja) {
 		onDomReady(() => {
-			const mainContent = document.querySelector('.mainContent');
+			const mainContent = document.querySelector(this.fallbackSelector);
 
 			naja.uiHandler.addEventListener('interaction', (event) => {
 				event.detail.options.spinnerTarget = event.detail.element.closest('[data-spinner]');

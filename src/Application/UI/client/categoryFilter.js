@@ -1,8 +1,8 @@
 import naja from 'naja';
 import onDomReady from './onDomReady';
 
-const initialize = () => {
-	const categoryFilter = document.querySelector('.categoryFilter');
+const enableCategoryFilter = (element) => {
+	const categoryFilter = element.querySelector('.categoryFilter');
 	if (categoryFilter !== null) {
 		const selectBox = categoryFilter.querySelector('select');
 		selectBox.addEventListener('change', (event) => {
@@ -14,4 +14,5 @@ const initialize = () => {
 	}
 };
 
-onDomReady(initialize);
+onDomReady(() => enableCategoryFilter(document));
+naja.snippetHandler.addEventListener('afterUpdate', (event) => enableCategoryFilter(event.detail.snippet));

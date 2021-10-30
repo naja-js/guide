@@ -1,3 +1,4 @@
+import naja from 'naja';
 import onDomReady from './onDomReady';
 
 const initialize = () => {
@@ -5,7 +6,7 @@ const initialize = () => {
 	if (categoryFilter !== null) {
 		const selectBox = categoryFilter.querySelector('select');
 		selectBox.addEventListener('change', (event) => {
-			event.target.form.submit();
+			naja.uiHandler.submitForm(event.target.form);
 		});
 
 		const submit = categoryFilter.querySelector('input[type="submit"]');

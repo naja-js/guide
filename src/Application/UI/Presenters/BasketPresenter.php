@@ -36,6 +36,10 @@ final class BasketPresenter extends BasePresenter
 			function (string $productId) {
 				$product = $this->productRepository->getById((int) $productId);
 				$component = $this->addToBasketButtonControlFactory->create($product);
+				$component->onChange[] = function () {
+					$this->payload->postGet = true;
+					$this->payload->url = $this->link('this');
+				};
 
 				return $component;
 			},

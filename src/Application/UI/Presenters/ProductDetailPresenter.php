@@ -45,6 +45,10 @@ final class ProductDetailPresenter extends BasePresenter
 	protected function createComponentAddToBasket(): AddToBasketButtonControl
 	{
 		$component = $this->addToBasketButtonControlFactory->create($this->product);
+		$component->onChange[] = function () {
+			$this->payload->postGet = true;
+			$this->payload->url = $this->link('this');
+		};
 
 		return $component;
 	}

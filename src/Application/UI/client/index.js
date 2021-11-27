@@ -1,5 +1,6 @@
 import naja from 'naja';
 import './analytics';
+import './errorHandler';
 import './categoryFilter';
 import './forms';
 
